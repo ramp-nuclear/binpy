@@ -3,7 +3,7 @@ import numpy as np
 
 def assert_sorted(arr):
     if not np.all(np.diff(arr) > 0.0):
-        raise ValueError(f"array must be monotonically increasing")
+        raise ValueError("array must be monotonically increasing")
 
 
 def simple_slice(arr, inds, axis):

@@ -1,6 +1,6 @@
 import numpy as np
 
-from binpy.utils import assert_sorted, bin_mids
+from binpy.utils import assert_sorted
 
 
 def fold(y0, x0, x1, axis=0):
