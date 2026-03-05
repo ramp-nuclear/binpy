@@ -1,6 +1,6 @@
 import numpy as np
 
-from binpy.utils import bin_mids
+from rebinpy.utils import bin_mids
 
 
 def _refine(y0, x0, x1, *, axis, integral):

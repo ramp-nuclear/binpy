@@ -1,6 +1,6 @@
 import numpy as np
 
-from binpy.utils import assert_sorted
+from rebinpy.utils import assert_sorted
 
 
 def fold(y0, x0, x1, axis=0):

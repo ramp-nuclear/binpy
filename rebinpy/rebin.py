@@ -2,14 +2,13 @@ from functools import reduce
 
 import numpy as np
 
-from binpy import fold
-from binpy.integrator import ConstantIntegrator, Integrator
-from binpy.refine import _refine
-from binpy.utils import assert_sorted
+from rebinpy import fold
+from rebinpy.integrator import ConstantIntegrator, Integrator
+from rebinpy.refine import _refine
+from rebinpy.utils import assert_sorted
 
 
-def rebin(y0: np.array, x0: np.array, x1: np.array, integrator: Integrator = ConstantIntegrator(),
-          axis=0) -> np.array:
+def rebin(y0: np.array, x0: np.array, x1: np.array, integrator: Integrator = ConstantIntegrator(), axis=0) -> np.array:
     """
     Parameters
     ----------

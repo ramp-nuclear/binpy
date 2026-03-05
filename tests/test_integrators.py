@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
 
-from binpy import refine
-from binpy.integrator import InverseIntegrator
+from rebinpy import refine
+from rebinpy.integrator import InverseIntegrator
 
 
 @pytest.fixture
@@ -24,6 +24,4 @@ def inverse_integrator():
     ],
 )
 def test_inverse_integrator(y0, x0, x1, y1):
-    assert np.allclose(
-        refine(y0, np.exp(x0), np.exp(x1), integrator=InverseIntegrator()), y1
-    )
+    assert np.allclose(refine(y0, np.exp(x0), np.exp(x1), integrator=InverseIntegrator()), y1)

@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from binpy import rebin
+from rebinpy import rebin
 
 
 @pytest.mark.parametrize(

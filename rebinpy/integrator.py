@@ -4,7 +4,7 @@ from typing import Protocol, Sequence
 import numpy as np
 from numpy.typing import ArrayLike
 
-from binpy.utils import assert_sorted, bin_mids
+from rebinpy.utils import assert_sorted, bin_mids
 
 
 class Integrator(Protocol):
@@ -35,7 +35,7 @@ class PiecewiseConstantIntegrator:
     def __init__(self, /, y, x):
         assert_sorted(x)
         if len(y) + 1 != len(x):
-            raise ValueError("shapes of values and breakpoints " "do not match")
+            raise ValueError("shapes of values and breakpoints do not match")
 
         self.breakpoints = np.asfarray(x)
         self._y = np.asfarray(y)

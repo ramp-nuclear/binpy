@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from binpy import fold
+from rebinpy import fold
 
 
 @pytest.mark.parametrize(
